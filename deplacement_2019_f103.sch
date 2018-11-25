@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L @Robot:black_pill U1
-U 1 1 5BDB17AF
-P 2400 4250
-F 0 "U1" H 2375 5465 50  0000 C CNN
-F 1 "black_pill" H 2375 5374 50  0000 C CNN
-F 2 "@Robot:black_pill" H 2400 4250 50  0001 C CNN
-F 3 "" H 2400 4250 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    2400 4250
-	1    0    0    -1  
-$EndComp
 Text GLabel 1800 4600 0    50   Input ~ 0
 QEI_gauche_1
 Text GLabel 1800 4700 0    50   Input ~ 0
@@ -524,14 +511,25 @@ Wire Wire Line
 	3800 2850 3700 2850
 Connection ~ 3700 2850
 $Comp
-L Connector_Generic:Conn_01x03_Male J?
+L Connector_Generic:Conn_01x03_Male J7
 U 1 1 5BFB6A14
 P 950 2300
-F 0 "J?" H 1056 2578 50  0000 C CNN
+F 0 "J7" H 1056 2578 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 1056 2487 50  0000 C CNN
-F 2 "" H 950 2300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 950 2300 50  0001 C CNN
 F 3 "~" H 950 2300 50  0001 C CNN
 	1    950  2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L @Robot:black_pill U1
+U 1 1 5BFAA1AA
+P 2400 4250
+F 0 "U1" H 2375 5465 50  0000 C CNN
+F 1 "black_pill" H 2375 5374 50  0000 C CNN
+F 2 "@Robot:black_pill" H 2400 4250 50  0001 C CNN
+F 3 "" H 2400 4250 50  0001 C CNN
+	1    2400 4250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
