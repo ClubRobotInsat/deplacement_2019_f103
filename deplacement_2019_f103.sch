@@ -4,532 +4,902 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Navigation Board"
-Date "2018-11-25"
-Rev "1"
-Comp "Club Robot"
+Title ""
+Date ""
+Rev ""
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1800 4600 0    50   Input ~ 0
-QEI_gauche_1
-Text GLabel 1800 4700 0    50   Input ~ 0
-QEI_gauche_2
-Text GLabel 1800 4800 0    50   Input ~ 0
-Direction_moteur_gauche
-Text GLabel 1800 4900 0    50   Input ~ 0
-Direction_moteur_droit
-Text GLabel 2950 4800 2    50   Input ~ 0
-QEI_droite_1
-Text GLabel 2950 4700 2    50   Input ~ 0
-QEI_droite_2
-Text GLabel 2950 4000 2    50   Input ~ 0
-PWM_moteur_droit
-Text GLabel 2950 3900 2    50   Input ~ 0
-PWM_moteur_gauche
-Text GLabel 2950 3800 2    50   Input ~ 0
-TX
-Text GLabel 2950 3700 2    50   Input ~ 0
-RX
-Text GLabel 1800 3400 0    50   Input ~ 0
-SPI_SCK
-Text GLabel 1800 3500 0    50   Input ~ 0
-SPI_MISO
-Text GLabel 1800 3600 0    50   Input ~ 0
-SPI_MOSI
-NoConn ~ 1800 3300
-NoConn ~ 1800 3800
-NoConn ~ 1800 3900
-NoConn ~ 1800 4000
-NoConn ~ 1800 4100
-NoConn ~ 1800 4200
-NoConn ~ 1800 4300
-NoConn ~ 1800 4400
-NoConn ~ 1800 4500
-NoConn ~ 2950 5100
-NoConn ~ 2950 5000
-NoConn ~ 2950 4900
-NoConn ~ 2950 4600
-NoConn ~ 2950 4500
-NoConn ~ 2950 4400
-NoConn ~ 2950 4300
-NoConn ~ 2950 4200
-NoConn ~ 2950 4100
-NoConn ~ 1800 5200
-NoConn ~ 2950 5200
 $Comp
-L power:+5V #PWR0101
-U 1 1 5BDB1D9E
-P 1800 5000
-F 0 "#PWR0101" H 1800 4850 50  0001 C CNN
-F 1 "+5V" V 1815 5128 50  0000 L CNN
-F 2 "" H 1800 5000 50  0001 C CNN
-F 3 "" H 1800 5000 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    1800 5000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5BDB1EBD
-P 1800 5100
-F 0 "#PWR0102" H 1800 4850 50  0001 C CNN
-F 1 "GND" V 1805 4972 50  0000 R CNN
-F 2 "" H 1800 5100 50  0001 C CNN
-F 3 "" H 1800 5100 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    1800 5100
+L power:+5V #PWR05
+U 1 1 5BEDA167
+P 1550 1300
+F 0 "#PWR05" H 1550 1150 50  0001 C CNN
+F 1 "+5V" V 1565 1428 50  0000 L CNN
+F 2 "" H 1550 1300 50  0001 C CNN
+F 3 "" H 1550 1300 50  0001 C CNN
+	1    1550 1300
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0103
-U 1 1 5BDB1F4F
-P 2950 3300
-F 0 "#PWR0103" H 2950 3050 50  0001 C CNN
-F 1 "GND" V 2955 3172 50  0000 R CNN
-F 2 "" H 2950 3300 50  0001 C CNN
-F 3 "" H 2950 3300 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    2950 3300
-	0    -1   -1   0   
+L power:GND #PWR06
+U 1 1 5BEDA302
+P 1550 1400
+F 0 "#PWR06" H 1550 1150 50  0001 C CNN
+F 1 "GND" H 1555 1227 50  0000 C CNN
+F 2 "" H 1550 1400 50  0001 C CNN
+F 3 "" H 1550 1400 50  0001 C CNN
+	1    1550 1400
+	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5BDB1F82
-P 2950 3400
-F 0 "#PWR0104" H 2950 3150 50  0001 C CNN
-F 1 "GND" V 2955 3272 50  0000 R CNN
-F 2 "" H 2950 3400 50  0001 C CNN
-F 3 "" H 2950 3400 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    2950 3400
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 2950 3500
-NoConn ~ 2950 3600
-$Comp
-L @Robot:alim_logique_5V J1
-U 1 1 5BDB21CE
-P 1150 1200
-F 0 "J1" H 1114 883 50  0000 C CNN
-F 1 "alim_logique_5V" H 1114 974 50  0000 C CNN
-F 2 "@Robot:HE14-3_horizontal" H 1150 1200 50  0001 C CNN
-F 3 "~" H 1150 1200 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    1150 1200
-	-1   0    0    1   
-$EndComp
-NoConn ~ 1350 1100
-$Comp
-L power:GND #PWR0105
-U 1 1 5BDB231B
-P 1350 1200
-F 0 "#PWR0105" H 1350 950 50  0001 C CNN
-F 1 "GND" V 1355 1072 50  0000 R CNN
-F 2 "" H 1350 1200 50  0001 C CNN
-F 3 "" H 1350 1200 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    1350 1200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 5BDB23AD
-P 1350 1300
-F 0 "#PWR0106" H 1350 1150 50  0001 C CNN
-F 1 "+5V" V 1365 1428 50  0000 L CNN
-F 2 "" H 1350 1300 50  0001 C CNN
-F 3 "" H 1350 1300 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    1350 1300
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J6
-U 1 1 5BDB27DA
-P 4250 2000
-F 0 "J6" H 4170 1575 50  0000 C CNN
-F 1 "QEI_gauche" H 4170 1666 50  0000 C CNN
-F 2 "@Robot:HE14-5_horizontal" H 4250 2000 50  0001 C CNN
-F 3 "~" H 4250 2000 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4250 2000
-	-1   0    0    1   
-$EndComp
-NoConn ~ 4450 2000
-Text GLabel 4450 1900 2    50   Input ~ 0
-QEI_gauche_1
-Text GLabel 4450 1800 2    50   Input ~ 0
-QEI_gauche_2
-$Comp
-L Connector_Generic:Conn_01x05 J5
-U 1 1 5BDB4109
-P 4250 1250
-F 0 "J5" H 4170 825 50  0000 C CNN
-F 1 "QEI_droite" H 4170 916 50  0000 C CNN
-F 2 "@Robot:HE14-5_horizontal" H 4250 1250 50  0001 C CNN
-F 3 "~" H 4250 1250 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4250 1250
-	-1   0    0    1   
-$EndComp
-NoConn ~ 4450 1250
-Text GLabel 4450 1150 2    50   Input ~ 0
-QEI_droite_1
-Text GLabel 4450 1050 2    50   Input ~ 0
-QEI_droite_2
-Text GLabel 1150 2400 2    50   Input ~ 0
-SPI_SCK
-Text GLabel 1150 2300 2    50   Input ~ 0
-SPI_MISO
-Text GLabel 1150 2200 2    50   Input ~ 0
-SPI_MOSI
-NoConn ~ 3050 1050
-Text GLabel 3050 1250 2    50   Input ~ 0
-PWM_moteur_droit
-Text GLabel 3050 1350 2    50   Input ~ 0
-Direction_moteur_droit
-$Comp
-L power:GND #PWR0107
-U 1 1 5BDB78A7
-P 3050 1150
-F 0 "#PWR0107" H 3050 900 50  0001 C CNN
-F 1 "GND" V 3055 1022 50  0000 R CNN
-F 2 "" H 3050 1150 50  0001 C CNN
-F 3 "" H 3050 1150 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    3050 1150
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 3050 1800
-Text GLabel 3050 2000 2    50   Input ~ 0
-PWM_moteur_gauche
-Text GLabel 3050 2100 2    50   Input ~ 0
-Direction_moteur_gauche
-$Comp
-L power:GND #PWR0108
-U 1 1 5BDB7CD4
-P 3050 1900
-F 0 "#PWR0108" H 3050 1650 50  0001 C CNN
-F 1 "GND" V 3055 1772 50  0000 R CNN
-F 2 "" H 3050 1900 50  0001 C CNN
-F 3 "" H 3050 1900 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    3050 1900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J4
-U 1 1 5BDB84F6
-P 3500 2750
-F 0 "J4" H 3420 2425 50  0000 C CNN
-F 1 "Conn_01x03" H 3420 2516 50  0000 C CNN
-F 2 "@Robot:HE14-3_horizontal" H 3500 2750 50  0001 C CNN
-F 3 "~" H 3500 2750 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    3500 2750
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 5BDB881C
-P 3700 2750
-F 0 "#PWR0109" H 3700 2500 50  0001 C CNN
-F 1 "GND" V 3705 2622 50  0000 R CNN
-F 2 "" H 3700 2750 50  0001 C CNN
-F 3 "" H 3700 2750 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    3700 2750
-	0    -1   -1   0   
-$EndComp
-Text GLabel 3700 2650 2    50   Input ~ 0
-RX
-Text GLabel 3800 2850 2    50   Input ~ 0
-TX
-$Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 5BDB95E5
-P 2850 1250
-F 0 "J2" H 2770 825 50  0000 C CNN
-F 1 "moteur_droit" H 2770 916 50  0000 C CNN
-F 2 "@Robot:ConnectorMicromatch-4" H 2850 1250 50  0001 C CNN
-F 3 "~" H 2850 1250 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    2850 1250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 5BDB9851
-P 2850 2000
-F 0 "J3" H 2770 1575 50  0000 C CNN
-F 1 "moteur_gauche" H 2770 1666 50  0000 C CNN
-F 2 "@Robot:ConnectorMicromatch-4" H 2850 2000 50  0001 C CNN
-F 3 "~" H 2850 2000 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    2850 2000
-	-1   0    0    1   
-$EndComp
+Text Notes 1050 850  0    118  ~ 0
+Alimentation
+Wire Notes Line
+	800  2250 800  600 
 $Comp
 L Device:LED D1
-U 1 1 5BDBC246
-P 4600 3500
-F 0 "D1" V 4638 3383 50  0000 R CNN
-F 1 "LED" V 4547 3383 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 4600 3500 50  0001 C CNN
-F 3 "~" H 4600 3500 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4600 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5BDBC70C
-P 5050 3500
-F 0 "D2" V 5088 3383 50  0000 R CNN
-F 1 "LED" V 4997 3383 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 5050 3500 50  0001 C CNN
-F 3 "~" H 5050 3500 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    5050 3500
+U 1 1 5BEDAB75
+P 4050 4150
+F 0 "D1" V 4088 4033 50  0000 R CNN
+F 1 "LED_hardfault_jaune" V 3997 4033 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 4050 4150 50  0001 C CNN
+F 3 "~" H 4050 4150 50  0001 C CNN
+	1    4050 4150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R1
-U 1 1 5BDBCAAB
-P 4600 3800
-F 0 "R1" H 4670 3846 50  0000 L CNN
-F 1 "R" H 4670 3755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 4530 3800 50  0001 C CNN
-F 3 "~" H 4600 3800 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4600 3800
+U 1 1 5BEDAEBC
+P 4050 3750
+F 0 "R1" H 4120 3796 50  0000 L CNN
+F 1 "150" H 4120 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3980 3750 50  0001 C CNN
+F 3 "~" H 4050 3750 50  0001 C CNN
+	1    4050 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 3450 2950 0    118  ~ 0
+Led
+Wire Wire Line
+	4050 3600 4050 3500
+Wire Wire Line
+	3750 4600 3650 4600
+Wire Wire Line
+	4050 4800 4050 4900
+Wire Wire Line
+	4050 4400 4050 4300
+Wire Wire Line
+	4050 3900 4050 4000
+$Comp
+L power:GND #PWR015
+U 1 1 5BEDC15B
+P 4050 4900
+F 0 "#PWR015" H 4050 4650 50  0001 C CNN
+F 1 "GND" H 4055 4727 50  0000 C CNN
+F 2 "" H 4050 4900 50  0001 C CNN
+F 3 "" H 4050 4900 50  0001 C CNN
+	1    4050 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
-U 1 1 5BDBCC68
-P 5050 3800
-F 0 "R2" H 5120 3846 50  0000 L CNN
-F 1 "R" H 5120 3755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 4980 3800 50  0001 C CNN
-F 3 "~" H 5050 3800 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    5050 3800
+L power:+5V #PWR014
+U 1 1 5BEDC3BE
+P 4050 3500
+F 0 "#PWR014" H 4050 3350 50  0001 C CNN
+F 1 "+5V" H 4065 3673 50  0000 C CNN
+F 2 "" H 4050 3500 50  0001 C CNN
+F 3 "" H 4050 3500 50  0001 C CNN
+	1    4050 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 3250 4750 0    39   ~ 0
+input : 3.3v ou 5v
+Text Label 3650 4600 1    39   ~ 0
+led_hardfault
+Wire Notes Line
+	3150 5150 3150 3200
+Text Notes 900  3000 0    118  ~ 0
+Microcontrolleur
+Wire Notes Line
+	600  2650 2700 2650
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 5BEDF7D1
+P 8100 1450
+F 0 "J9" H 8020 1125 50  0000 C CNN
+F 1 "Liaison serie" H 8020 1216 50  0000 C CNN
+F 2 "@Robot:HE14-3-straight" H 8100 1450 50  0001 C CNN
+F 3 "~" H 8100 1450 50  0001 C CNN
+	1    8100 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 1550 8400 1550
+Wire Wire Line
+	8300 1450 8400 1450
+$Comp
+L power:GND #PWR034
+U 1 1 5BEE094F
+P 8400 1550
+F 0 "#PWR034" H 8400 1300 50  0001 C CNN
+F 1 "GND" H 8405 1377 50  0000 C CNN
+F 2 "" H 8400 1550 50  0001 C CNN
+F 3 "" H 8400 1550 50  0001 C CNN
+	1    8400 1550
+	1    0    0    -1  
+$EndComp
+Text Label 8400 1450 0    50   ~ 0
+RX
+Text Label 8400 1350 0    50   ~ 0
+TX
+Text Notes 6450 1000 0    118  ~ 0
+Connectique
+Text Notes 3300 3150 0    39   ~ 0
+Voir doc pour\nles valeurs des \nresistances
+$Comp
+L @Robot:w5500 U2
+U 1 1 5C086601
+P 7000 1550
+F 0 "U2" H 7000 2025 50  0000 C CNN
+F 1 "w5500" H 7000 1934 50  0000 C CNN
+F 2 "@Robot:w5500" H 7000 1200 50  0001 C CNN
+F 3 "/home/paul/nextcloud/Documents/INSA/Club Robot/DOC/w5500/W5500.pdf" H 7000 1200 50  0001 C CNN
+	1    7000 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
-U 1 1 5BDBCFBC
-P 4600 3950
-F 0 "#PWR0110" H 4600 3700 50  0001 C CNN
-F 1 "GND" V 4605 3822 50  0000 R CNN
-F 2 "" H 4600 3950 50  0001 C CNN
-F 3 "" H 4600 3950 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4600 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5BDBD17A
-P 5050 3950
-F 0 "#PWR0111" H 5050 3700 50  0001 C CNN
-F 1 "GND" V 5055 3822 50  0000 R CNN
-F 2 "" H 5050 3950 50  0001 C CNN
-F 3 "" H 5050 3950 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    5050 3950
-	1    0    0    -1  
-$EndComp
-Text GLabel 1800 3700 0    50   Input ~ 0
-LED_feedback
-Text GLabel 5050 3350 1    50   Input ~ 0
-LED_feedback
-$Comp
-L power:+5V #PWR0112
-U 1 1 5BDBDF99
-P 4600 3350
-F 0 "#PWR0112" H 4600 3200 50  0001 C CNN
-F 1 "+5V" V 4615 3478 50  0000 L CNN
-F 2 "" H 4600 3350 50  0001 C CNN
-F 3 "" H 4600 3350 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4600 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 5BDC554C
-P 4450 1350
-F 0 "#PWR0113" H 4450 1100 50  0001 C CNN
-F 1 "GND" V 4455 1222 50  0000 R CNN
-F 2 "" H 4450 1350 50  0001 C CNN
-F 3 "" H 4450 1350 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4450 1350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 5BDC5795
-P 4450 2100
-F 0 "#PWR0114" H 4450 1850 50  0001 C CNN
-F 1 "GND" V 4455 1972 50  0000 R CNN
-F 2 "" H 4450 2100 50  0001 C CNN
-F 3 "" H 4450 2100 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4450 2100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0115
-U 1 1 5BDC5944
-P 4450 2200
-F 0 "#PWR0115" H 4450 2050 50  0001 C CNN
-F 1 "+5V" V 4465 2328 50  0000 L CNN
-F 2 "" H 4450 2200 50  0001 C CNN
-F 3 "" H 4450 2200 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4450 2200
+L power:GND #PWR020
+U 1 1 5C088D02
+P 6550 1300
+F 0 "#PWR020" H 6550 1050 50  0001 C CNN
+F 1 "GND" V 6555 1172 50  0000 R CNN
+F 2 "" H 6550 1300 50  0001 C CNN
+F 3 "" H 6550 1300 50  0001 C CNN
+	1    6550 1300
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0116
-U 1 1 5BDC5ABB
-P 4450 1450
-F 0 "#PWR0116" H 4450 1300 50  0001 C CNN
-F 1 "+5V" V 4465 1578 50  0000 L CNN
-F 2 "" H 4450 1450 50  0001 C CNN
-F 3 "" H 4450 1450 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    4450 1450
+L power:GND #PWR021
+U 1 1 5C088D4A
+P 6550 1400
+F 0 "#PWR021" H 6550 1150 50  0001 C CNN
+F 1 "GND" V 6555 1272 50  0000 R CNN
+F 2 "" H 6550 1400 50  0001 C CNN
+F 3 "" H 6550 1400 50  0001 C CNN
+	1    6550 1400
 	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5C088D8B
+P 7450 1300
+F 0 "#PWR028" H 7450 1050 50  0001 C CNN
+F 1 "GND" V 7455 1172 50  0000 R CNN
+F 2 "" H 7450 1300 50  0001 C CNN
+F 3 "" H 7450 1300 50  0001 C CNN
+	1    7450 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5C08F1FF
+P 1200 1300
+F 0 "J3" H 1120 975 50  0000 C CNN
+F 1 "Alim logique" H 1120 1066 50  0000 C CNN
+F 2 "@Robot:HE14-3-straight" H 1200 1300 50  0001 C CNN
+F 3 "~" H 1200 1300 50  0001 C CNN
+	1    1200 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 1300 1550 1300
+Wire Wire Line
+	1400 1400 1550 1400
+NoConn ~ 1400 1200
+Text Notes 1450 1200 0    50   ~ 0
+détrompeur
+$Comp
+L power:+5V #PWR09
+U 1 1 5C09305A
+P 2400 1250
+F 0 "#PWR09" H 2400 1100 50  0001 C CNN
+F 1 "+5V" V 2415 1378 50  0000 L CNN
+F 2 "" H 2400 1250 50  0001 C CNN
+F 3 "" H 2400 1250 50  0001 C CNN
+	1    2400 1250
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C1
-U 1 1 5BDCACF6
-P 1350 1450
-F 0 "C1" H 1465 1496 50  0000 L CNN
-F 1 "C" H 1465 1405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 1388 1300 50  0001 C CNN
-F 3 "~" H 1350 1450 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    1350 1450
+U 1 1 5C093824
+P 2500 1400
+F 0 "C1" H 2615 1446 50  0000 L CNN
+F 1 "1u" H 2615 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2538 1250 50  0001 C CNN
+F 3 "~" H 2500 1400 50  0001 C CNN
+	1    2500 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0117
-U 1 1 5BDCB128
-P 1350 1600
-F 0 "#PWR0117" H 1350 1350 50  0001 C CNN
-F 1 "GND" V 1355 1472 50  0000 R CNN
-F 2 "" H 1350 1600 50  0001 C CNN
-F 3 "" H 1350 1600 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    1350 1600
+L power:GND #PWR010
+U 1 1 5C093EF4
+P 2500 1550
+F 0 "#PWR010" H 2500 1300 50  0001 C CNN
+F 1 "GND" H 2505 1377 50  0000 C CNN
+F 2 "" H 2500 1550 50  0001 C CNN
+F 3 "" H 2500 1550 50  0001 C CNN
+	1    2500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1250 2600 1250
+Wire Wire Line
+	2400 1250 2500 1250
+Connection ~ 2500 1250
+$Comp
+L power:GND #PWR011
+U 1 1 5C095160
+P 2900 1550
+F 0 "#PWR011" H 2900 1300 50  0001 C CNN
+F 1 "GND" H 2905 1377 50  0000 C CNN
+F 2 "" H 2900 1550 50  0001 C CNN
+F 3 "" H 2900 1550 50  0001 C CNN
+	1    2900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR013
+U 1 1 5C0952F3
+P 3350 1250
+F 0 "#PWR013" H 3350 1100 50  0001 C CNN
+F 1 "+3.3V" V 3365 1378 50  0000 L CNN
+F 2 "" H 3350 1250 50  0001 C CNN
+F 3 "" H 3350 1250 50  0001 C CNN
+	1    3350 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR029
+U 1 1 5C092FBB
+P 7450 1400
+F 0 "#PWR029" H 7450 1250 50  0001 C CNN
+F 1 "+3.3V" V 7465 1528 50  0000 L CNN
+F 2 "" H 7450 1400 50  0001 C CNN
+F 3 "" H 7450 1400 50  0001 C CNN
+	1    7450 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR030
+U 1 1 5C093035
+P 7450 1500
+F 0 "#PWR030" H 7450 1350 50  0001 C CNN
+F 1 "+3.3V" V 7465 1628 50  0000 L CNN
+F 2 "" H 7450 1500 50  0001 C CNN
+F 3 "" H 7450 1500 50  0001 C CNN
+	1    7450 1500
+	0    1    1    0   
+$EndComp
+NoConn ~ 7450 1600
+Wire Notes Line
+	6050 600  8700 600 
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5C09726C
+P 6750 2200
+F 0 "J5" H 6700 2000 50  0000 L CNN
+F 1 "PWM input" H 6550 2450 50  0000 L CNN
+F 2 "@Robot:HE14-3-straight" H 6750 2200 50  0001 C CNN
+F 3 "~" H 6750 2200 50  0001 C CNN
+	1    6750 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5C097BCC
+P 7150 2200
+F 0 "J7" H 7150 2000 50  0000 C CNN
+F 1 "PWM output" H 7100 2450 50  0000 C CNN
+F 2 "@Robot:HE14-3-straight" H 7150 2200 50  0001 C CNN
+F 3 "~" H 7150 2200 50  0001 C CNN
+	1    7150 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5C098CFE
+P 7350 2300
+F 0 "#PWR026" H 7350 2050 50  0001 C CNN
+F 1 "GND" V 7355 2172 50  0000 R CNN
+F 2 "" H 7350 2300 50  0001 C CNN
+F 3 "" H 7350 2300 50  0001 C CNN
+	1    7350 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5C098EB4
+P 6550 2300
+F 0 "#PWR022" H 6550 2050 50  0001 C CNN
+F 1 "GND" V 6555 2172 50  0000 R CNN
+F 2 "" H 6550 2300 50  0001 C CNN
+F 3 "" H 6550 2300 50  0001 C CNN
+	1    6550 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 2200 6450 2200
+Wire Wire Line
+	7350 2200 7450 2200
+Text Label 6450 2200 2    50   ~ 0
+qei_left_A
+Text Label 6450 2100 2    50   ~ 0
+qei_left_B
+Text Label 7450 2200 0    50   ~ 0
+motor_left_PWM
+Wire Notes Line
+	9500 3200 9500 5150
+Text Notes 700  7600 0    50   ~ 0
+Doc pour le 3.3 -> 5\nhttps://www.hobbytronics.co.uk/mosfet-voltage-level-converter
+Wire Notes Line
+	800  600  5800 600 
+Wire Notes Line
+	800  2250 5800 2250
+Wire Notes Line
+	5800 600  5800 2250
+$Comp
+L Connector:Conn_01x20_Female J1
+U 1 1 5C0965A6
+P 1250 4100
+F 0 "J1" H 1277 4076 50  0000 L CNN
+F 1 "Conn_01x20_Female" H 900 5150 50  0000 L CNN
+F 2 "@Robot:PinSocket_1x20_P2.54mm_Vertical_Long_Pads" H 1250 4100 50  0001 C CNN
+F 3 "~" H 1250 4100 50  0001 C CNN
+	1    1250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C0A3C99
+P 1050 5000
+F 0 "#PWR02" H 1050 4750 50  0001 C CNN
+F 1 "GND" V 1055 4872 50  0000 R CNN
+F 2 "" H 1050 5000 50  0001 C CNN
+F 3 "" H 1050 5000 50  0001 C CNN
+	1    1050 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5C0A3E7B
+P 2200 3200
+F 0 "#PWR07" H 2200 2950 50  0001 C CNN
+F 1 "GND" V 2205 3072 50  0000 R CNN
+F 2 "" H 2200 3200 50  0001 C CNN
+F 3 "" H 2200 3200 50  0001 C CNN
+	1    2200 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5C0A3F9D
+P 2200 3300
+F 0 "#PWR08" H 2200 3050 50  0001 C CNN
+F 1 "GND" V 2205 3172 50  0000 R CNN
+F 2 "" H 2200 3300 50  0001 C CNN
+F 3 "" H 2200 3300 50  0001 C CNN
+	1    2200 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5C0FF0FE
+P 1050 4900
+F 0 "#PWR01" H 1050 4750 50  0001 C CNN
+F 1 "+5V" V 1065 5028 50  0000 L CNN
+F 2 "" H 1050 4900 50  0001 C CNN
+F 3 "" H 1050 4900 50  0001 C CNN
+	1    1050 4900
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	2700 2650 2700 5200
+Wire Notes Line
+	600  5200 2700 5200
+Wire Notes Line
+	600  5200 600  2650
+Wire Wire Line
+	3200 1250 3250 1250
+$Comp
+L Regulator_Linear:TC1262-33 U1
+U 1 1 5C128DAC
+P 2900 1250
+F 0 "U1" H 2900 1492 50  0000 C CNN
+F 1 "TC1262-33" H 2900 1401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2900 1475 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21373C.pdf" H 2900 950 50  0001 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C129261
+P 3250 1400
+F 0 "C2" H 3365 1446 50  0000 L CNN
+F 1 "1u" H 3365 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3288 1250 50  0001 C CNN
+F 3 "~" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 1250
+Wire Wire Line
+	3250 1250 3350 1250
+$Comp
+L power:GND #PWR012
+U 1 1 5C1292E3
+P 3250 1550
+F 0 "#PWR012" H 3250 1300 50  0001 C CNN
+F 1 "GND" H 3255 1377 50  0000 C CNN
+F 2 "" H 3250 1550 50  0001 C CNN
+F 3 "" H 3250 1550 50  0001 C CNN
+	1    3250 1550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3150 5150 9500 5150
+Wire Notes Line
+	3150 3200 9500 3200
+$Comp
+L Connector:Conn_01x20_Female J4
+U 1 1 5C096C54
+P 2400 4100
+F 0 "J4" H 2427 4076 50  0000 L CNN
+F 1 "Conn_01x20_Female" H 2000 5150 50  0000 L CNN
+F 2 "@Robot:PinSocket_1x20_P2.54mm_Vertical_Long_Pads" H 2400 4100 50  0001 C CNN
+F 3 "~" H 2400 4100 50  0001 C CNN
+	1    2400 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6550 1800
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5C23BD88
+P 1550 1400
+F 0 "#FLG04" H 1550 1475 50  0001 C CNN
+F 1 "PWR_FLAG" V 1550 1528 50  0000 L CNN
+F 2 "" H 1550 1400 50  0001 C CNN
+F 3 "~" H 1550 1400 50  0001 C CNN
+	1    1550 1400
+	0    1    1    0   
+$EndComp
+Connection ~ 1550 1400
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5C23BE04
+P 1550 1300
+F 0 "#FLG03" H 1550 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 1474 50  0000 C CNN
+F 2 "" H 1550 1300 50  0001 C CNN
+F 3 "~" H 1550 1300 50  0001 C CNN
+	1    1550 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 1300
+Text Notes 2450 5100 0    50   ~ 0
+VBT
+Text Notes 2450 5000 0    50   ~ 0
+C13\n
+Text Notes 2450 4900 0    50   ~ 0
+C14
+Text Notes 2450 4800 0    50   ~ 0
+C15
+Text Notes 2450 4700 0    50   ~ 0
+A0
+Text Notes 2450 4600 0    50   ~ 0
+A1
+Text Notes 2450 4500 0    50   ~ 0
+A2
+Text Notes 2450 4400 0    50   ~ 0
+A3
+Text Notes 2450 4300 0    50   ~ 0
+A4
+Text Notes 2450 4200 0    50   ~ 0
+A5
+Text Notes 2450 4100 0    50   ~ 0
+A6
+Text Notes 2450 4000 0    50   ~ 0
+A7
+Text Notes 2450 3900 0    50   ~ 0
+B0
+Text Notes 2450 3800 0    50   ~ 0
+B1
+Text Notes 2450 3700 0    50   ~ 0
+B10
+Text Notes 2450 3600 0    50   ~ 0
+B11
+Text Notes 2450 3500 0    50   ~ 0
+RST
+Text Notes 2450 3400 0    50   ~ 0
++3.3V
+Text Notes 2450 3300 0    50   ~ 0
+GND
+Text Notes 2450 3200 0    50   ~ 0
+GND
+Text Notes 1300 5100 0    50   ~ 0
++3.3V
+Text Notes 1300 5000 0    50   ~ 0
+GND
+Text Notes 1300 4900 0    50   ~ 0
++5V
+Text Notes 1300 4800 0    50   ~ 0
+B9
+Text Notes 1300 4700 0    50   ~ 0
+B8
+Text Notes 1300 4600 0    50   ~ 0
+B7
+Text Notes 1300 4500 0    50   ~ 0
+B6
+Text Notes 1300 4400 0    50   ~ 0
+B5
+Text Notes 1300 4300 0    50   ~ 0
+B4
+Text Notes 1300 4200 0    50   ~ 0
+B3
+Text Notes 1300 4100 0    50   ~ 0
+A15
+Text Notes 1300 4000 0    50   ~ 0
+A12
+Text Notes 1300 3900 0    50   ~ 0
+A11
+Text Notes 1300 3800 0    50   ~ 0
+A10
+Text Notes 1300 3700 0    50   ~ 0
+A9
+Text Notes 1300 3600 0    50   ~ 0
+A8
+Text Notes 1300 3500 0    50   ~ 0
+B15
+Text Notes 1300 3400 0    50   ~ 0
+B14
+Text Notes 1300 3300 0    50   ~ 0
+B13
+Text Notes 1300 3200 0    50   ~ 0
+B12
+NoConn ~ 2200 5100
+NoConn ~ 2200 5000
+NoConn ~ 2200 4500
+NoConn ~ 2200 4400
+NoConn ~ 2200 4300
+NoConn ~ 2200 4200
+NoConn ~ 2200 3800
+NoConn ~ 2200 3500
+NoConn ~ 1050 4800
+NoConn ~ 1050 4700
+NoConn ~ 1050 4400
+NoConn ~ 1050 4300
+NoConn ~ 1050 4200
+NoConn ~ 1050 4100
+NoConn ~ 1050 3800
+NoConn ~ 1050 3700
+NoConn ~ 1050 3600
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5C3683D7
+P 3950 4600
+F 0 "Q1" H 4156 4646 50  0000 L CNN
+F 1 "PMF370XN" H 4156 4555 50  0000 L CNN
+F 2 "digikey-footprints:SOT-323" H 4150 4700 50  0001 C CNN
+F 3 "~" H 3950 4600 50  0001 C CNN
+	1    3950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C36A160
+P 5350 4150
+F 0 "D2" V 5388 4033 50  0000 R CNN
+F 1 "LED_communication_vert" V 5297 4033 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 5350 4150 50  0001 C CNN
+F 3 "~" H 5350 4150 50  0001 C CNN
+	1    5350 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C36A167
+P 5350 3750
+F 0 "R4" H 5420 3796 50  0000 L CNN
+F 1 "150" H 5420 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5280 3750 50  0001 C CNN
+F 3 "~" H 5350 3750 50  0001 C CNN
+	1    5350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3600 5350 3500
+Wire Wire Line
+	5050 4600 4950 4600
+Wire Wire Line
+	5350 4800 5350 4900
+Wire Wire Line
+	5350 4400 5350 4300
+Wire Wire Line
+	5350 3900 5350 4000
+$Comp
+L power:GND #PWR019
+U 1 1 5C36A173
+P 5350 4900
+F 0 "#PWR019" H 5350 4650 50  0001 C CNN
+F 1 "GND" H 5355 4727 50  0000 C CNN
+F 2 "" H 5350 4900 50  0001 C CNN
+F 3 "" H 5350 4900 50  0001 C CNN
+	1    5350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 5C36A179
+P 5350 3500
+F 0 "#PWR018" H 5350 3350 50  0001 C CNN
+F 1 "+5V" H 5365 3673 50  0000 C CNN
+F 2 "" H 5350 3500 50  0001 C CNN
+F 3 "" H 5350 3500 50  0001 C CNN
+	1    5350 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 4550 4750 0    39   ~ 0
+input : 3.3v ou 5v
+Text Label 4950 4600 1    39   ~ 0
+TX
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 5C36A181
+P 5250 4600
+F 0 "Q3" H 5456 4646 50  0000 L CNN
+F 1 "PMF370XN" H 5456 4555 50  0000 L CNN
+F 2 "digikey-footprints:SOT-323" H 5450 4700 50  0001 C CNN
+F 3 "~" H 5250 4600 50  0001 C CNN
+	1    5250 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D3
-U 1 1 5BE9B369
-P 5450 3500
-F 0 "D3" V 5488 3383 50  0000 R CNN
-F 1 "LED" V 5397 3383 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 5450 3500 50  0001 C CNN
-F 3 "~" H 5450 3500 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    5450 3500
+U 1 1 5C36B30F
+P 6800 4150
+F 0 "D3" V 6838 4033 50  0000 R CNN
+F 1 "LED_ucontrolleur_vert" V 6747 4033 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 6800 4150 50  0001 C CNN
+F 3 "~" H 6800 4150 50  0001 C CNN
+	1    6800 4150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R3
-U 1 1 5BE9B370
-P 5450 3800
-F 0 "R3" H 5520 3846 50  0000 L CNN
-F 1 "R" H 5520 3755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" V 5380 3800 50  0001 C CNN
-F 3 "~" H 5450 3800 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    5450 3800
+L Device:R R5
+U 1 1 5C36B316
+P 6800 3750
+F 0 "R5" H 6870 3796 50  0000 L CNN
+F 1 "150" H 6870 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6730 3750 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3600 6800 3500
+Wire Wire Line
+	6500 4600 6400 4600
+Wire Wire Line
+	6800 4800 6800 4900
+Wire Wire Line
+	6800 4400 6800 4300
+Wire Wire Line
+	6800 3900 6800 4000
+$Comp
+L power:GND #PWR025
+U 1 1 5C36B322
+P 6800 4900
+F 0 "#PWR025" H 6800 4650 50  0001 C CNN
+F 1 "GND" H 6805 4727 50  0000 C CNN
+F 2 "" H 6800 4900 50  0001 C CNN
+F 3 "" H 6800 4900 50  0001 C CNN
+	1    6800 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0118
-U 1 1 5BE9B377
-P 5450 3950
-F 0 "#PWR0118" H 5450 3700 50  0001 C CNN
-F 1 "GND" V 5455 3822 50  0000 R CNN
-F 2 "" H 5450 3950 50  0001 C CNN
-F 3 "" H 5450 3950 50  0001 C CNN
-F 4 "" H 0   0   50  0001 C CNN "Datasheet"
-F 5 "" H 0   0   50  0001 C CNN "Footprint"
-	1    5450 3950
+L power:+5V #PWR024
+U 1 1 5C36B328
+P 6800 3500
+F 0 "#PWR024" H 6800 3350 50  0001 C CNN
+F 1 "+5V" H 6815 3673 50  0000 C CNN
+F 2 "" H 6800 3500 50  0001 C CNN
+F 3 "" H 6800 3500 50  0001 C CNN
+	1    6800 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 5450 3350 1    50   Input ~ 0
-LED_TX
-Text GLabel 3800 2950 2    50   Input ~ 0
-LED_TX
-Wire Wire Line
-	3700 2850 3700 2950
-Wire Wire Line
-	3700 2950 3800 2950
-Wire Wire Line
-	3800 2850 3700 2850
-Connection ~ 3700 2850
+Text Notes 6000 4750 0    39   ~ 0
+input : 3.3v ou 5v
 $Comp
-L Connector_Generic:Conn_01x03_Male J7
-U 1 1 5BFB6A14
-P 950 2300
-F 0 "J7" H 1056 2578 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 1056 2487 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 950 2300 50  0001 C CNN
-F 3 "~" H 950 2300 50  0001 C CNN
-	1    950  2300
+L Device:Q_NMOS_GSD Q4
+U 1 1 5C36B330
+P 6700 4600
+F 0 "Q4" H 6906 4646 50  0000 L CNN
+F 1 "PMF370XN" H 6906 4555 50  0000 L CNN
+F 2 "digikey-footprints:SOT-323" H 6900 4700 50  0001 C CNN
+F 3 "~" H 6700 4600 50  0001 C CNN
+	1    6700 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L @Robot:black_pill U1
-U 1 1 5BFAA1AA
-P 2400 4250
-F 0 "U1" H 2375 5465 50  0000 C CNN
-F 1 "black_pill" H 2375 5374 50  0000 C CNN
-F 2 "@Robot:black_pill" H 2400 4250 50  0001 C CNN
-F 3 "" H 2400 4250 50  0001 C CNN
-	1    2400 4250
+L Device:LED D4
+U 1 1 5C36B337
+P 8100 4150
+F 0 "D4" V 8138 4033 50  0000 R CNN
+F 1 "LED_alimentation_rouge" V 8047 4033 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 8100 4150 50  0001 C CNN
+F 3 "~" H 8100 4150 50  0001 C CNN
+	1    8100 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5C36B33E
+P 8100 3750
+F 0 "R6" H 8170 3796 50  0000 L CNN
+F 1 "150" H 8170 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8030 3750 50  0001 C CNN
+F 3 "~" H 8100 3750 50  0001 C CNN
+	1    8100 3750
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8100 3600 8100 3500
+Wire Wire Line
+	8100 3900 8100 4000
+$Comp
+L power:GND #PWR033
+U 1 1 5C36B34A
+P 8100 4900
+F 0 "#PWR033" H 8100 4650 50  0001 C CNN
+F 1 "GND" H 8105 4727 50  0000 C CNN
+F 2 "" H 8100 4900 50  0001 C CNN
+F 3 "" H 8100 4900 50  0001 C CNN
+	1    8100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR032
+U 1 1 5C36B350
+P 8100 3500
+F 0 "#PWR032" H 8100 3350 50  0001 C CNN
+F 1 "+5V" H 8115 3673 50  0000 C CNN
+F 2 "" H 8100 3500 50  0001 C CNN
+F 3 "" H 8100 3500 50  0001 C CNN
+	1    8100 3500
+	1    0    0    -1  
+$EndComp
+Text Label 7450 2100 0    50   ~ 0
+motor_left_direction
+Wire Wire Line
+	7350 2100 7450 2100
+Wire Wire Line
+	6550 2100 6450 2100
+Wire Wire Line
+	8300 1350 8400 1350
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 5C3FB822
+P 6750 2750
+F 0 "J6" H 6700 2550 50  0000 L CNN
+F 1 "PWM input" H 6550 3000 50  0000 L CNN
+F 2 "@Robot:HE14-3-straight" H 6750 2750 50  0001 C CNN
+F 3 "~" H 6750 2750 50  0001 C CNN
+	1    6750 2750
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5C3FB829
+P 7150 2750
+F 0 "J8" H 7150 2550 50  0000 C CNN
+F 1 "PWM output" H 7100 3000 50  0000 C CNN
+F 2 "@Robot:HE14-3-straight" H 7150 2750 50  0001 C CNN
+F 3 "~" H 7150 2750 50  0001 C CNN
+	1    7150 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5C3FB830
+P 7350 2850
+F 0 "#PWR027" H 7350 2600 50  0001 C CNN
+F 1 "GND" V 7355 2722 50  0000 R CNN
+F 2 "" H 7350 2850 50  0001 C CNN
+F 3 "" H 7350 2850 50  0001 C CNN
+	1    7350 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5C3FB836
+P 6550 2850
+F 0 "#PWR023" H 6550 2600 50  0001 C CNN
+F 1 "GND" V 6555 2722 50  0000 R CNN
+F 2 "" H 6550 2850 50  0001 C CNN
+F 3 "" H 6550 2850 50  0001 C CNN
+	1    6550 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 2750 6450 2750
+Wire Wire Line
+	7350 2750 7450 2750
+Text Label 6450 2750 2    50   ~ 0
+qei_right_A
+Text Label 6450 2650 2    50   ~ 0
+qei_right_B
+Text Label 7450 2750 0    50   ~ 0
+motor_right_PWM
+Text Label 7450 2650 0    50   ~ 0
+motor_right_direction
+Wire Wire Line
+	7350 2650 7450 2650
+Wire Wire Line
+	6550 2650 6450 2650
+Text Label 1050 4600 2    50   ~ 0
+qei_left_B
+Text Label 1050 4500 2    50   ~ 0
+qei_left_A
+Text Label 2200 4700 2    50   ~ 0
+qei_right_A
+Text Label 2200 4600 2    50   ~ 0
+qei_right_B
+Text Label 6550 1500 2    50   ~ 0
+MOSI
+Text Label 6550 1600 2    50   ~ 0
+SCLK
+Text Label 6550 1700 2    50   ~ 0
+CS
+Text Label 7450 1700 0    50   ~ 0
+MISO
+Text Label 1050 3300 2    50   ~ 0
+SCLK
+Text Label 1050 3400 2    50   ~ 0
+MISO
+Text Label 1050 3500 2    50   ~ 0
+MOSI
+Text Label 2200 3600 2    50   ~ 0
+RX
+Text Label 2200 3700 2    50   ~ 0
+TX
+NoConn ~ 2200 3400
+NoConn ~ 1050 5100
+Text Label 1050 3900 2    50   ~ 0
+motor_left_PWM
+Text Label 1050 4000 2    50   ~ 0
+motor_left_direction
+Text Label 2200 3900 2    50   ~ 0
+motor_right_PWM
+Text Label 2200 4000 2    50   ~ 0
+motor_right_direction
+Text Label 2200 4800 2    39   ~ 0
+led_hardfault
+Text Label 2200 4900 2    50   ~ 0
+led_feedback
+Text Label 6400 4600 1    50   ~ 0
+led_feedback
+Text Label 2200 4100 2    50   ~ 0
+CS
+Wire Notes Line
+	8550 600  8550 3050
+Wire Notes Line
+	5900 600  5900 3050
+Wire Notes Line
+	5900 3050 8550 3050
+NoConn ~ 1050 3200
+Wire Wire Line
+	8100 4300 8100 4900
 $EndSCHEMATC
