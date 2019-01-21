@@ -321,9 +321,9 @@ F 3 "" H 6550 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6550 2100 6450 2100
+	6550 2100 6500 2100
 Wire Wire Line
-	7950 2200 8050 2200
+	7950 2200 8000 2200
 Text Label 6450 2100 2    50   ~ 0
 qei_left_A
 Text Label 6450 2000 2    50   ~ 0
@@ -771,9 +771,7 @@ $EndComp
 Text Label 8050 2100 0    50   ~ 0
 motor_left_direction
 Wire Wire Line
-	7950 2100 8050 2100
-Wire Wire Line
-	6550 2000 6450 2000
+	7950 2100 8000 2100
 Wire Wire Line
 	8300 1350 8400 1350
 $Comp
@@ -810,9 +808,9 @@ F 3 "" H 6550 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6550 2650 6450 2650
+	6550 2650 6500 2650
 Wire Wire Line
-	7950 2750 8050 2750
+	7950 2750 8000 2750
 Text Label 6450 2650 2    50   ~ 0
 qei_right_A
 Text Label 6450 2550 2    50   ~ 0
@@ -822,7 +820,7 @@ motor_right_PWM
 Text Label 8050 2650 0    50   ~ 0
 motor_right_direction
 Wire Wire Line
-	7950 2650 8050 2650
+	7950 2650 8000 2650
 Wire Wire Line
 	6550 2550 6450 2550
 Text Label 1050 4600 2    50   ~ 0
@@ -961,4 +959,90 @@ Text Label 4950 4600 1    50   ~ 0
 led_communication
 Text Label 2200 3800 2    50   ~ 0
 led_communication
+$Comp
+L Connector:TestPoint_Probe TP1
+U 1 1 5C463A27
+P 6500 2100
+F 0 "TP1" H 6653 2202 50  0000 L CNN
+F 1 "TestPoint_Probe" H 6653 2111 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 6700 2100 50  0001 C CNN
+F 3 "~" H 6700 2100 50  0001 C CNN
+	1    6500 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 2100
+Wire Wire Line
+	6500 2100 6450 2100
+$Comp
+L Connector:TestPoint_Probe TP2
+U 1 1 5C4643E2
+P 6500 2650
+F 0 "TP2" H 6653 2752 50  0000 L CNN
+F 1 "TestPoint_Probe" H 6653 2661 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 6700 2650 50  0001 C CNN
+F 3 "~" H 6700 2650 50  0001 C CNN
+	1    6500 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 2650
+Wire Wire Line
+	6500 2650 6450 2650
+$Comp
+L Connector:TestPoint_Probe TP3
+U 1 1 5C464886
+P 8000 2100
+F 0 "TP3" H 8153 2202 50  0000 L CNN
+F 1 "TestPoint_Probe" H 8153 2111 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8200 2100 50  0001 C CNN
+F 3 "~" H 8200 2100 50  0001 C CNN
+	1    8000 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 2100
+Wire Wire Line
+	8000 2100 8050 2100
+$Comp
+L Connector:TestPoint_Probe TP5
+U 1 1 5C4649AA
+P 8000 2650
+F 0 "TP5" H 8153 2752 50  0000 L CNN
+F 1 "TestPoint_Probe" H 8153 2661 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8200 2650 50  0001 C CNN
+F 3 "~" H 8200 2650 50  0001 C CNN
+	1    8000 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 2650
+Wire Wire Line
+	8000 2650 8050 2650
+$Comp
+L Connector:TestPoint_Probe TP4
+U 1 1 5C464D5B
+P 8000 2200
+F 0 "TP4" H 8153 2302 50  0000 L CNN
+F 1 "TestPoint_Probe" H 8153 2211 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8200 2200 50  0001 C CNN
+F 3 "~" H 8200 2200 50  0001 C CNN
+	1    8000 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 2200
+Wire Wire Line
+	8000 2200 8050 2200
+$Comp
+L Connector:TestPoint_Probe TP6
+U 1 1 5C464EAE
+P 8000 2750
+F 0 "TP6" H 8153 2852 50  0000 L CNN
+F 1 "TestPoint_Probe" H 8153 2761 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8200 2750 50  0001 C CNN
+F 3 "~" H 8200 2750 50  0001 C CNN
+	1    8000 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 2750
+Wire Wire Line
+	8000 2750 8050 2750
+Wire Wire Line
+	6450 2000 6550 2000
 $EndSCHEMATC
