@@ -563,7 +563,6 @@ NoConn ~ 2200 5100
 NoConn ~ 2200 5000
 NoConn ~ 2200 4500
 NoConn ~ 2200 4400
-NoConn ~ 2200 4300
 NoConn ~ 2200 4200
 NoConn ~ 2200 3500
 NoConn ~ 1050 4800
@@ -1045,4 +1044,17 @@ Wire Wire Line
 	8000 2750 8050 2750
 Wire Wire Line
 	6450 2000 6550 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5C468385
+P 2200 4300
+F 0 "#PWR?" H 2200 4050 50  0001 C CNN
+F 1 "GND" V 2205 4172 50  0000 R CNN
+F 2 "" H 2200 4300 50  0001 C CNN
+F 3 "" H 2200 4300 50  0001 C CNN
+	1    2200 4300
+	0    1    1    0   
+$EndComp
+Text Notes 700  5500 0    50   ~ 0
+GPIOs à la masse : \ntrick pour passer le plan de masse de part et d’autre du connecteur\n\n
 $EndSCHEMATC
