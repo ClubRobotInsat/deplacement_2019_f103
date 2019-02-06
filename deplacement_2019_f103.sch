@@ -560,10 +560,8 @@ B13
 Text Notes 1300 3200 0    50   ~ 0
 B12
 NoConn ~ 2200 5100
-NoConn ~ 2200 5000
 NoConn ~ 2200 4500
 NoConn ~ 2200 4400
-NoConn ~ 2200 4200
 NoConn ~ 2200 3500
 NoConn ~ 1050 4800
 NoConn ~ 1050 4700
@@ -573,7 +571,6 @@ NoConn ~ 1050 4200
 NoConn ~ 1050 4100
 NoConn ~ 1050 3800
 NoConn ~ 1050 3700
-NoConn ~ 2200 4100
 $Comp
 L Device:Q_NMOS_GSD Q1
 U 1 1 5C3683D7
@@ -838,11 +835,11 @@ Text Label 6250 1500 2    50   ~ 0
 CS
 Text Label 7150 1500 0    50   ~ 0
 MISO
-Text Label 1050 3300 2    50   ~ 0
+Text Label 2200 4200 2    50   ~ 0
 SCLK
-Text Label 1050 3400 2    50   ~ 0
+Text Label 2200 4100 2    50   ~ 0
 MISO
-Text Label 1050 3500 2    50   ~ 0
+Text Label 2200 4000 2    50   ~ 0
 MOSI
 Text Label 2200 3600 2    50   ~ 0
 RX
@@ -854,9 +851,9 @@ Text Label 1050 3900 2    50   ~ 0
 motor_left_PWM
 Text Label 1050 4000 2    50   ~ 0
 motor_left_direction
-Text Label 2200 3900 2    50   ~ 0
+Text Label 1050 3300 2    50   ~ 0
 motor_right_PWM
-Text Label 2200 4000 2    50   ~ 0
+Text Label 1050 3400 2    50   ~ 0
 motor_right_direction
 Text Label 2200 4800 2    39   ~ 0
 led_hardfault
@@ -864,8 +861,6 @@ Text Label 2200 4900 2    50   ~ 0
 led_feedback
 Text Label 6400 4600 1    50   ~ 0
 led_feedback
-Text Label 1050 3600 2    50   ~ 0
-CS
 Wire Notes Line
 	8550 600  8550 3050
 Wire Notes Line
@@ -956,7 +951,7 @@ F 3 "" H 1250 1950 50  0001 C CNN
 $EndComp
 Text Label 4950 4600 1    50   ~ 0
 led_communication
-Text Label 2200 3800 2    50   ~ 0
+Text Label 2200 5000 2    50   ~ 0
 led_communication
 $Comp
 L Connector:TestPoint_Probe TP1
@@ -1057,4 +1052,9 @@ F 3 "" H 2200 4300 50  0001 C CNN
 $EndComp
 Text Notes 700  5500 0    50   ~ 0
 GPIOs à la masse : \ntrick pour passer le plan de masse de part et d’autre du connecteur\n\n
+Text Label 2200 3900 2    50   ~ 0
+CS
+NoConn ~ 1050 3500
+NoConn ~ 1050 3600
+NoConn ~ 2200 3800
 $EndSCHEMATC
