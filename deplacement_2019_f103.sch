@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:deplacement_2019_f103-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -560,8 +559,8 @@ B13
 Text Notes 1300 3200 0    50   ~ 0
 B12
 NoConn ~ 2200 5100
-NoConn ~ 2200 4500
-NoConn ~ 2200 4400
+NoConn ~ 2200 5000
+NoConn ~ 2200 4900
 NoConn ~ 2200 3500
 NoConn ~ 1050 4800
 NoConn ~ 1050 4700
@@ -851,13 +850,13 @@ Text Label 1050 3900 2    50   ~ 0
 motor_left_PWM
 Text Label 1050 4000 2    50   ~ 0
 motor_left_direction
-Text Label 1050 3300 2    50   ~ 0
+Text Label 2200 4500 2    50   ~ 0
 motor_right_PWM
-Text Label 1050 3400 2    50   ~ 0
+Text Label 2200 4400 2    50   ~ 0
 motor_right_direction
-Text Label 2200 4800 2    39   ~ 0
+Text Label 1050 3200 2    39   ~ 0
 led_hardfault
-Text Label 2200 4900 2    50   ~ 0
+Text Label 1050 3400 2    50   ~ 0
 led_feedback
 Text Label 6400 4600 1    50   ~ 0
 led_feedback
@@ -867,7 +866,7 @@ Wire Notes Line
 	5900 600  5900 3050
 Wire Notes Line
 	5900 3050 8550 3050
-NoConn ~ 1050 3200
+NoConn ~ 2200 4800
 Wire Wire Line
 	8100 4300 8100 4900
 $Comp
@@ -876,7 +875,7 @@ U 1 1 5C463730
 P 6750 2650
 F 0 "J5" H 6669 2225 50  0000 C CNN
 F 1 "Conn_01x05" H 6669 2316 50  0000 C CNN
-F 2 "@Robot:HE14-5_horizontal" H 6750 2650 50  0001 C CNN
+F 2 "@Robot:HE14-5-straight" H 6750 2650 50  0001 C CNN
 F 3 "~" H 6750 2650 50  0001 C CNN
 	1    6750 2650
 	1    0    0    1   
@@ -887,7 +886,7 @@ U 1 1 5C463E4D
 P 6750 2100
 F 0 "J4" H 6669 1675 50  0000 C CNN
 F 1 "Conn_01x05" H 6669 1766 50  0000 C CNN
-F 2 "@Robot:HE14-5_horizontal" H 6750 2100 50  0001 C CNN
+F 2 "@Robot:HE14-5-straight" H 6750 2100 50  0001 C CNN
 F 3 "~" H 6750 2100 50  0001 C CNN
 	1    6750 2100
 	1    0    0    1   
@@ -951,7 +950,7 @@ F 3 "" H 1250 1950 50  0001 C CNN
 $EndComp
 Text Label 4950 4600 1    50   ~ 0
 led_communication
-Text Label 2200 5000 2    50   ~ 0
+Text Label 1050 3600 2    50   ~ 0
 led_communication
 $Comp
 L Connector:TestPoint_Probe TP1
@@ -1054,7 +1053,7 @@ Text Notes 700  5500 0    50   ~ 0
 GPIOs à la masse : \ntrick pour passer le plan de masse de part et d’autre du connecteur\n\n
 Text Label 2200 3900 2    50   ~ 0
 CS
+NoConn ~ 1050 3300
 NoConn ~ 1050 3500
-NoConn ~ 1050 3600
 NoConn ~ 2200 3800
 $EndSCHEMATC
