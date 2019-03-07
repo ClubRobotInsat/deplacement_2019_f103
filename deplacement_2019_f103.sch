@@ -566,7 +566,6 @@ NoConn ~ 1050 4800
 NoConn ~ 1050 4700
 NoConn ~ 1050 4400
 NoConn ~ 1050 4300
-NoConn ~ 1050 4200
 NoConn ~ 1050 4100
 NoConn ~ 1050 3800
 NoConn ~ 1050 3700
@@ -846,11 +845,11 @@ Text Label 2200 3700 2    50   ~ 0
 TX
 NoConn ~ 2200 3400
 NoConn ~ 1050 5100
-Text Label 1050 3900 2    50   ~ 0
+Text Label 2200 3900 2    50   ~ 0
 motor_left_PWM
 Text Label 1050 4000 2    50   ~ 0
 motor_left_direction
-Text Label 2200 4500 2    50   ~ 0
+Text Label 2200 3800 2    50   ~ 0
 motor_right_PWM
 Text Label 2200 4400 2    50   ~ 0
 motor_right_direction
@@ -1051,9 +1050,30 @@ F 3 "" H 2200 4300 50  0001 C CNN
 $EndComp
 Text Notes 700  5500 0    50   ~ 0
 GPIOs à la masse : \ntrick pour passer le plan de masse de part et d’autre du connecteur\n\n
-Text Label 2200 3900 2    50   ~ 0
+Text Label 1050 3900 2    50   ~ 0
 CS
 NoConn ~ 1050 3300
 NoConn ~ 1050 3500
-NoConn ~ 2200 3800
+$Comp
+L power:+5V #PWR0102
+U 1 1 5C8150E3
+P 1050 4200
+F 0 "#PWR0102" H 1050 4050 50  0001 C CNN
+F 1 "+5V" V 1065 4328 50  0000 L CNN
+F 2 "" H 1050 4200 50  0001 C CNN
+F 3 "" H 1050 4200 50  0001 C CNN
+	1    1050 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C815BF9
+P 2200 4500
+F 0 "#PWR?" H 2200 4250 50  0001 C CNN
+F 1 "GND" V 2205 4372 50  0000 R CNN
+F 2 "" H 2200 4500 50  0001 C CNN
+F 3 "" H 2200 4500 50  0001 C CNN
+	1    2200 4500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
