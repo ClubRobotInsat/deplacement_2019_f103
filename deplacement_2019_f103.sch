@@ -7,10 +7,10 @@ encoding utf-8
 Sheet 1 1
 Title "Carte Déplacement"
 Date "2019-05-16"
-Rev "v1"
+Rev "v1.2"
 Comp "Club Robot"
-Comment1 ""
-Comment2 ""
+Comment1 "Paul Florence"
+Comment2 "Alex Salazar"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -112,7 +112,7 @@ U 1 1 5BEDF7D1
 P 8100 1450
 F 0 "J8" H 8020 1125 50  0000 C CNN
 F 1 "Liaison serie" H 8020 1216 50  0000 C CNN
-F 2 "@Robot:HE14-3-straight" H 8100 1450 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 8100 1450 50  0001 C CNN
 F 3 "~" H 8100 1450 50  0001 C CNN
 	1    8100 1450
 	-1   0    0    1   
@@ -190,7 +190,7 @@ U 1 1 5C08F1FF
 P 1200 1300
 F 0 "J1" H 1120 975 50  0000 C CNN
 F 1 "Alim logique" H 1120 1066 50  0000 C CNN
-F 2 "@Robot:HE14-3-straight" H 1200 1300 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 1200 1300 50  0001 C CNN
 F 3 "~" H 1200 1300 50  0001 C CNN
 	1    1200 1300
 	-1   0    0    1   
@@ -293,7 +293,7 @@ U 1 1 5C097BCC
 P 7750 2200
 F 0 "J6" H 7750 2000 50  0000 C CNN
 F 1 "PWM output" H 7700 2450 50  0000 C CNN
-F 2 "@Robot:HE14-3-straight" H 7750 2200 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 7750 2200 50  0001 C CNN
 F 3 "~" H 7750 2200 50  0001 C CNN
 	1    7750 2200
 	-1   0    0    1   
@@ -320,10 +320,6 @@ F 3 "" H 6550 2300 50  0001 C CNN
 	1    6550 2300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6550 2100 6500 2100
-Wire Wire Line
-	7950 2200 8000 2200
 Text Label 6450 2100 2    50   ~ 0
 qei_left_A
 Text Label 6450 2000 2    50   ~ 0
@@ -567,7 +563,6 @@ NoConn ~ 1050 4800
 NoConn ~ 1050 4700
 NoConn ~ 1050 4400
 NoConn ~ 1050 4300
-NoConn ~ 1050 4100
 NoConn ~ 1050 3800
 NoConn ~ 1050 3700
 $Comp
@@ -766,8 +761,6 @@ $EndComp
 Text Label 8050 2100 0    50   ~ 0
 motor_left_direction
 Wire Wire Line
-	7950 2100 8000 2100
-Wire Wire Line
 	8300 1350 8400 1350
 $Comp
 L Connector_Generic:Conn_01x03 J7
@@ -775,7 +768,7 @@ U 1 1 5C3FB829
 P 7750 2750
 F 0 "J7" H 7750 2550 50  0000 C CNN
 F 1 "PWM output" H 7700 3000 50  0000 C CNN
-F 2 "@Robot:HE14-3-straight" H 7750 2750 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 7750 2750 50  0001 C CNN
 F 3 "~" H 7750 2750 50  0001 C CNN
 	1    7750 2750
 	-1   0    0    1   
@@ -802,10 +795,6 @@ F 3 "" H 6550 2850 50  0001 C CNN
 	1    6550 2850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6550 2650 6500 2650
-Wire Wire Line
-	7950 2750 8000 2750
 Text Label 6450 2650 2    50   ~ 0
 qei_right_A
 Text Label 6450 2550 2    50   ~ 0
@@ -814,8 +803,6 @@ Text Label 8050 2750 0    50   ~ 0
 motor_right_PWM
 Text Label 8050 2650 0    50   ~ 0
 motor_right_direction
-Wire Wire Line
-	7950 2650 8000 2650
 Wire Wire Line
 	6550 2550 6450 2550
 Text Label 1050 4600 2    50   ~ 0
@@ -875,7 +862,7 @@ U 1 1 5C463730
 P 6750 2650
 F 0 "J5" H 6669 2225 50  0000 C CNN
 F 1 "Conn_01x05" H 6669 2316 50  0000 C CNN
-F 2 "@Robot:HE14-5-straight" H 6750 2650 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-5-2.54_1x05_P2.54mm_Horizontal" H 6750 2650 50  0001 C CNN
 F 3 "~" H 6750 2650 50  0001 C CNN
 	1    6750 2650
 	1    0    0    1   
@@ -886,7 +873,7 @@ U 1 1 5C463E4D
 P 6750 2100
 F 0 "J4" H 6669 1675 50  0000 C CNN
 F 1 "Conn_01x05" H 6669 1766 50  0000 C CNN
-F 2 "@Robot:HE14-5-straight" H 6750 2100 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-5-2.54_1x05_P2.54mm_Horizontal" H 6750 2100 50  0001 C CNN
 F 3 "~" H 6750 2100 50  0001 C CNN
 	1    6750 2100
 	1    0    0    1   
@@ -952,90 +939,6 @@ Text Label 4950 4600 1    50   ~ 0
 led_communication
 Text Label 1050 3600 2    50   ~ 0
 led_communication
-$Comp
-L Connector:TestPoint_Probe TP1
-U 1 1 5C463A27
-P 6500 2100
-F 0 "TP1" H 6653 2202 50  0000 L CNN
-F 1 "TestPoint_Probe" H 6653 2111 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 6700 2100 50  0001 C CNN
-F 3 "~" H 6700 2100 50  0001 C CNN
-	1    6500 2100
-	1    0    0    -1  
-$EndComp
-Connection ~ 6500 2100
-Wire Wire Line
-	6500 2100 6450 2100
-$Comp
-L Connector:TestPoint_Probe TP2
-U 1 1 5C4643E2
-P 6500 2650
-F 0 "TP2" H 6653 2752 50  0000 L CNN
-F 1 "TestPoint_Probe" H 6653 2661 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 6700 2650 50  0001 C CNN
-F 3 "~" H 6700 2650 50  0001 C CNN
-	1    6500 2650
-	1    0    0    -1  
-$EndComp
-Connection ~ 6500 2650
-Wire Wire Line
-	6500 2650 6450 2650
-$Comp
-L Connector:TestPoint_Probe TP3
-U 1 1 5C464886
-P 8000 2100
-F 0 "TP3" H 8153 2202 50  0000 L CNN
-F 1 "TestPoint_Probe" H 8153 2111 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8200 2100 50  0001 C CNN
-F 3 "~" H 8200 2100 50  0001 C CNN
-	1    8000 2100
-	1    0    0    -1  
-$EndComp
-Connection ~ 8000 2100
-Wire Wire Line
-	8000 2100 8050 2100
-$Comp
-L Connector:TestPoint_Probe TP5
-U 1 1 5C4649AA
-P 8000 2650
-F 0 "TP5" H 8153 2752 50  0000 L CNN
-F 1 "TestPoint_Probe" H 8153 2661 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8200 2650 50  0001 C CNN
-F 3 "~" H 8200 2650 50  0001 C CNN
-	1    8000 2650
-	1    0    0    -1  
-$EndComp
-Connection ~ 8000 2650
-Wire Wire Line
-	8000 2650 8050 2650
-$Comp
-L Connector:TestPoint_Probe TP4
-U 1 1 5C464D5B
-P 8000 2200
-F 0 "TP4" H 8153 2302 50  0000 L CNN
-F 1 "TestPoint_Probe" H 8153 2211 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8200 2200 50  0001 C CNN
-F 3 "~" H 8200 2200 50  0001 C CNN
-	1    8000 2200
-	1    0    0    -1  
-$EndComp
-Connection ~ 8000 2200
-Wire Wire Line
-	8000 2200 8050 2200
-$Comp
-L Connector:TestPoint_Probe TP6
-U 1 1 5C464EAE
-P 8000 2750
-F 0 "TP6" H 8153 2852 50  0000 L CNN
-F 1 "TestPoint_Probe" H 8153 2761 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8200 2750 50  0001 C CNN
-F 3 "~" H 8200 2750 50  0001 C CNN
-	1    8000 2750
-	1    0    0    -1  
-$EndComp
-Connection ~ 8000 2750
-Wire Wire Line
-	8000 2750 8050 2750
 Wire Wire Line
 	6450 2000 6550 2000
 $Comp
@@ -1067,14 +970,37 @@ F 3 "" H 1050 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5C815BF9
 P 2200 4500
-F 0 "#PWR?" H 2200 4250 50  0001 C CNN
+F 0 "#PWR0103" H 2200 4250 50  0001 C CNN
 F 1 "GND" V 2205 4372 50  0000 R CNN
 F 2 "" H 2200 4500 50  0001 C CNN
 F 3 "" H 2200 4500 50  0001 C CNN
 	1    2200 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 2100 6550 2100
+Wire Wire Line
+	6450 2650 6550 2650
+Wire Wire Line
+	7950 2100 8050 2100
+Wire Wire Line
+	7950 2200 8050 2200
+Wire Wire Line
+	7950 2650 8050 2650
+Wire Wire Line
+	7950 2750 8050 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5CDF09F6
+P 1050 4100
+F 0 "#PWR?" H 1050 3850 50  0001 C CNN
+F 1 "GND" V 1055 3972 50  0000 R CNN
+F 2 "" H 1050 4100 50  0001 C CNN
+F 3 "" H 1050 4100 50  0001 C CNN
+	1    1050 4100
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC
