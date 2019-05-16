@@ -1,13 +1,14 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:deplacement_2019_f103-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Carte Déplacement"
+Date "2019-05-16"
+Rev "v1"
+Comp "Club Robot"
 Comment1 ""
 Comment2 ""
 Comment3 ""
